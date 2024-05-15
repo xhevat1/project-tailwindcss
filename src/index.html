@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>AUTODRIVE - Car Dealership</title>
+</head>
+
+<body class="">
+    <nav class="bg-black h-24 flex items-center justify-between px-12">
+        <img src="https://media.istockphoto.com/id/1408605259/vector/auto-sports-vehicle-silhouette.jpg?s=612x612&w=0&k=20&c=--lwIV-ayDVrjistgR22-B9xFic1xsAusMxxzu6Mjhw=" alt="Car Icon" class="h-16">
+        <h1 class="text-4xl font-bold text-gray-600">AUTODRIVE <br><span class="text-gray-600 text-lg">Car Dealership</span></h1>
+    </nav>
+
+    <section class="flex justify-center items-center mt-16">
+        <div class=" rounded-lg shadow-lg p-8 space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <select class="border border-gray-300 rounded-md py-2 px-4 mb-4 mx-1.5 mt-3 block w-full focus:outline-none focus:border-blue-500"  id="country" name="country" onchange="if (this.value !== '#') window.location.href = this.value;">
+                    <option value="#" selected disabled>All brends</option>
+                    <option class="border bg-gray-100" value="mercedes.html">Mercedes</option>
+                    <option value="bmw.html">Bmw</option>
+                    <option value="Audi.html">Audi</option>
+                    <option value="Porche.html">Porche</option>
+                    <option value="Bentley.html">Bentley</option>
+                    
+                </select>
+                <select class="border border-gray-30  rounded-md py-2 px-4 mb-4 mt-3  block w-full  focus:outline-none focus:border-blue-500"  name="price from
+                " id="price from">
+                <option value="#" selected disabled>Price from</option>
+                <option class="borde" value="from 100$">from 100$</option>
+                <option value="form 500$">form 500$</option>
+                <option value="from 1000$">from 1000$</option>
+                <option value="from 1500$">from 1500$</option>
+                <option value="form 2000$">form 2000$</option>
+                <option value="form 2500$">form 2500$</option>
+                <option value="form 3000$">form 3000$</option>
+                <option value="form 3500$">form 3500$</option>
+                <option value="form 4000$">form 4000$</option>
+                <option value="form 4500$">form 4500$</option>
+                <option value="form 5000$">form 5000$</option>
+                <option value="form 6000$">form 6000$</option>
+                <option value="form 7000$">form 7000$</option>
+                <option value="form 8000$">form 8000$</option>
+                <option value="form 9000$">form 9000$</option>
+                <option value="form 10000$">form 10000$</option>
+                <option value="form 11000$">form 11000$</option>
+                <option value="form 12000$">form 12000$</option>
+                <option value="form 13000$">form 13000$</option>
+                <option value="form 14000$">form 14000$</option>
+                <option value="form 15000$">form 15000$</option>
+                <option value="form 20000$">form 20000$</option>
+                <option value="form 25000$">form 25000$</option>
+                <option value="form 30000$">form 30000$</option>
+                <option value="form 50000$">form 50000$</option>
+                <option value="form 60000$">form 60000$</option>
+                <option value="form 70000$">form 70000$</option>
+                <option value="form 80000$">form 80000$</option>
+                <option value="form 90000$">form 90000$</option>
+                <option value="form 100000$">form 100000$</option>
+                </select>
+
+                <select class="border border-gray-300 rounded-md py-2 px-4 mb-4 mt-3 block w-full focus:outline-none focus:border-blue-500" name="Price up to" id="Price up to">
+                    <option value="#" selected disabled>Price up to</option>
+                    <option class="borde" value="from 100$">up to 100$</option>
+                    <option value="up to 500$">up to 500$</option>
+                    <option value="up to 1000$">up to 1000$</option>
+                    <option value="up to 1500$">up to 1500$</option>
+                    <option value="up to 2000$">up to 2000$</option>
+                    <option value="up to 2500$">up to 2500$</option>
+                    <option value="up to 3000$">up to 3000$</option>
+                    <option value="up to 3500$">up to 3500$</option>
+                    <option value="up to 4000$">up to 4000$</option>
+                    <option value="up to 4500$">up to 4500$</option>
+                    <option value="up to 5000$">up to 5000$</option>
+                    <option value="up to 6000$">up to 6000$</option>
+                    <option value="up to 7000$">up to 7000$</option>
+                    <option value="up to 8000$">up to 8000$</option>
+                    <option value="up to 9000$">up to 9000$</option>
+                    <option value="up to 10000$">up to 10000$</option>
+                    <option value="up to 11000$">up to 11000$</option>
+                    <option value="up to 12000$">up to 12000$</option>
+                    <option value="up to 13000$">up to 13000$</option>
+                    <option value="up to 14000$">up to 14000$</option>
+                    <option value="up to 15000$">up to 15000$</option>
+                    <option value="up to 20000$">up to 20000$</option>
+                    <option value="up to 25000$">up to 25000$</option>
+                    <option value="up to 30000$">up to 30000$</option>
+                    <option value="up to 50000$">up to 50000$</option>
+                    <option value="up to 60000$">up to 60000$</option>
+                    <option value="up to 70000$">up to 70000$</option>
+                    <option value="up to 80000$">up to 80000$</option>
+                    <option value="up to 90000$">up to 90000$</option>
+                    <option value="up to 100000$">up 100000$</option>
+                    </select>
+
+                    <select class="border border-gray-300 rounded-md py-2 px-4 mb-4 mt-3 me-60 block w-full focus:outline-none focus:border-blue-500" name="Kilometers traveld to
+                    " id="Kilometers traveld to">
+                    <option value="#" selected disabled>Kilometers traveld to</option>
+                    <option class="borde" value="up to 5000 km">up to 5000 km</option>
+                    <option value="up to 10000 km">up to 10000 km</option>
+                    <option value="up to 20000 km ">up to 20000 km</option>
+                    <option value="up to 25000 km">up to 25000 km</option>
+                    <option value="up to 50000 km">up to 50000 km</option>
+                    <option value="up to 75000 km">up to 75000 km</option>
+                    <option value="up to 100000 km">up to 100000 km</option>
+                    <option value="up to 125000 km">up to 125000 km</option>
+                    <option value="up to 150000 km">up to 150000 km</option>
+                    <option value="up to 200000 km">up to 200000 km</option>
+                    <option value="up to 225000 km">up to 225000 km</option>
+                    </select>
+
+                <select class="border border-gray-300 rounded-md py-2 px-4 mb-4 mt-3 mx-1.5 block w-full focus:outline-none focus:border-blue-500" name="Year of" id="Year of">
+                    <option value="#" selected disabled>Year of</option>
+                    <option value="from 2024">from 2024</option>
+                    <option value="from 2023">from 2023</option>
+                    <option value="from 2022">from 2022</option>
+                    <option value="from 2021">from 2021</option>
+                    <option value="from 2020">from 2020</option>
+                    <option value="from 2019">from 2019</option>
+                    <option value="from 2018">from 2018</option>
+                    <option value="from 2024">from 2024</option>
+                    <option value="since 2017">since 2017</option>
+                    <option value="since 2016">since 2016</option>
+                    <option value="since 2015">since 2015</option>
+                    <option value="since 2014">since 2014</option>
+                    <option value="since 2013">since 2013</option>
+                    <option value="since 2012">since 2012</option>
+                    <option value="since 2011">since 2011</option>
+                    <option value="since 2010">since 2010</option>
+                    <option value="since 2009">since 2009</option>
+                    <option value="since 2008">since 2008</option>
+                    <option value="since 2007">since 2007</option>
+                    <option value="since 2006">since 2006</option>
+                    <option value="since 2005">since 2005</option>
+                    <option value="since 2004">since 2004</option>
+                    <option value="since 2003">since 2003</option>
+                    <option value="since 2002">since 2002</option>
+                    <option value="since 2001">since 2001</option>
+                    <option value="since 2000">since 2000</option>
+                    </select>
+
+                    <select class="border border-gray-300 rounded-md py-2 px-4 mb-4 mt-3 block w-full focus:outline-none focus:border-blue-500" name="Year of" id="Year of">
+                        <option value="#" selected disabled>Year to</option>
+                        <option value="until 2024">until 2024</option>
+                        <option value="until 2023">until 2023</option>
+                        <option value="until 2022">until 2022</option>
+                        <option value="until 2021">until 2021</option>
+                        <option value="until 2020">until 2020</option>
+                        <option value="until 2019">until 2019</option>
+                        <option value="until 2018">until 2018</option>
+                        <option value="until 2024">until 2024</option>
+                        <option value="until 2017">until 2017</option>
+                        <option value="until 2016">until 2016</option>
+                        <option value="until 2015">until 2015</option>
+                        <option value="until 2014">until 2014</option>
+                        <option value="until 2013">until 2013</option>
+                        <option value="until 2012">until 2012</option>
+                        <option value="until 2011">until 2011</option>
+                        <option value="until 2010">until 2010</option>
+                        <option value="until 2009">until 2009</option>
+                        <option value="until 2008">until 2008</option>
+                        <option value="until 2007">until 2007</option>
+                        <option value="until 2006">until 2006</option>
+                        <option value="until 2005">until 2005</option>
+                        <option value="until 2004">until 2004</option>
+                        <option value="until 2003">until 2003</option>
+                        <option value="until 2002">until 2002</option>
+                        <option value="until 2001">until 2001</option>
+                        <option value="until 2000">until 2000</option>
+                        </select>
+
+                        <select class="border border-gray-300 rounded-md py-2 px-4 mb-4  mt-3   block w-full focus:outline-none  focus:border-blue-500" name="Fuel" id="Fuel">
+                            <option value="#" selected disabled>Fuel</option>
+                            <option value="gasoline">gasoline</option>
+                            <option value="disel">disel</option>
+                            <option value="hybrid">hybrid</option>
+                            <option value="e-drive">e-drive</option>
+                            <option value="gas">gas</option>
+                            </select>
+                            <input type="submit" value="Search" class="bg-white hover:bg-black text-green-700 font-bold py-2 px-4 mt-1  me-1.5  rounded-md focus:outline-none focus:shadow-outline">
+                            </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white mt-16 py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <img src="https://i.pinimg.com/564x/15/4e/c0/154ec0194501da6147407ebd3404bb7d.jpg" alt="Car 1" class="hover:scale-110 transform transition duration-500 ease-in-out">
+            <img src="https://i.pinimg.com/564x/26/ff/23/26ff23555d9df3c8fc142cf3157cf4df.jpg" alt="Car 2" class="hover:scale-110 transform transition duration-500 ease-in-out">
+            <img src="https://i.pinimg.com/564x/fb/6f/cd/fb6fcde27c94dac5c1d3df0e1fb556e1.jpg" alt="Car 3" class="hover:scale-110 transform transition duration-500 ease-in-out">
+            <img src="https://i.pinimg.com/564x/23/96/72/23967214a19c6236b6b30735857ea73c.jpg" alt="Car 4" class="hover:scale-110 transform transition duration-500 ease-in-out">
+            <img src="https://i.pinimg.com/736x/fe/42/0a/fe420a3d8d4580c44266f3d37afa5698.jpg" alt="Car 5" class="hover:scale-110 transform transition duration-500 ease-in-out">
+        </div>
+    </section>
+</body>
+</html>
